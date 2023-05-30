@@ -1,0 +1,132 @@
+:root {
+    --primario: #072B61;
+    --secundario: #F3F5FC;
+    --gris: #868E96;
+    --negro: #000000;
+    --fuentePrincipal: 'PT Sans Narrow', sans-serif;
+    --fuenteSecundaria: 'Open Sans', sans-serif;
+    --btnColor: #757FB2;
+    --background: #609ED4;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: var(--fuenteSecundaria);
+    color: var(--primario);
+    background-image: linear-gradient(to top, var(--background) 0%, var(--secundario) 100%);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.centrado {text-align: center;}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    color: var(--primario);
+}
+h1{
+    margin-bottom: .5rem;
+}
+h3 {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.usuario {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-style: var(--fuenteSecundaria);
+    color: var(--primario);
+
+}
+
+.usuario__input {
+    font-synthesis: var(--fuenteSecundaria);
+}
+.usuario__secreto__display,
+.usuario__secreto__display.placeholder {
+    width: 30rem;
+    height: 50rem;
+    border-radius: 1.5rem;
+    text-align: center;
+
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 16px 30px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 16px 30px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 16px 30px -10px rgba(0,0,0,0.57);
+}
+
+textarea{
+    font-family: var(--fuenteSecundaria);
+    color: var(--primario);
+    font-size: 3rem;
+    border: var(--gris);
+    }
+
+.usuario__secreto__input,
+.usuario__secreto__input.placeholder {
+    text-decoration: none;
+    height: 50rem;
+    width: 30rem;
+    border: 0;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--fuenteSecundaria);
+    color: var(--primario);
+    background-color: transparent;
+}
+
+.usuario__boton1,
+.usuario__boton2 {
+    border-radius: .9rem;
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    text-decoration: none;
+    border: 0;
+    color: var(--secundario);
+
+}
+
+.usuario__boton1 {
+    padding: .7rem;
+    width: 9.5rem;
+    margin-left: 5rem;
+    background-color: #D8DFE8;
+    color: var(--primario);
+}
+
+.usuario__boton1:hover,
+.usuario__boton2:hover {
+    background-color: var(--primario);
+    color: var(--secundario);
+}
+
+.usuario__boton2 {
+    padding: .7rem;
+    margin-right: 0rem;
+    background-color: #D8DFE8;
+    color: var(--primario);
+}
+
+.footer {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    align-items: center;
+}
